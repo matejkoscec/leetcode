@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-class P67AddBinary : Solution {
+object P67AddBinary : Solution {
 
     override fun test() {
         val a = "1010"

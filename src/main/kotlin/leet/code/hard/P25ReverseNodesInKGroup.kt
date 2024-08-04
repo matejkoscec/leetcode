@@ -3,7 +3,7 @@ package leet.code.hard
 import leet.code.Solution
 import leet.code.util.ListNode
 
-class P25ReverseNodesInKGroup : Solution {
+object P25ReverseNodesInKGroup : Solution {
 
     override fun test() {
         val head = ListNode(1).apply {

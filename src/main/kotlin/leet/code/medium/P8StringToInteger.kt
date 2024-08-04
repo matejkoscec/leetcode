@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-class P8StringToInteger : Solution {
+object P8StringToInteger : Solution {
 
     override fun test() {
         println(Int.MAX_VALUE)

@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-class P66PlusOne : Solution {
+object P66PlusOne : Solution {
 
     override fun test() {
         val res = plusOne(intArrayOf(9, 9, 9))

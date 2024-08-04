@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-class P88MergeSortedArray : Solution {
+object P88MergeSortedArray : Solution {
 
     override fun test() {
         var nums1 = intArrayOf(1, 2, 3, 0, 0, 0)

@@ -3,15 +3,13 @@ package leet.code.medium
 import leet.code.Solution
 import kotlin.text.StringBuilder
 
-class P17LetterCombinationsOfAPhoneNumber : Solution {
+object P17LetterCombinationsOfAPhoneNumber : Solution {
 
     override fun test() {
         println(letterCombinations("23"))
     }
 
-    companion object {
-        val mappings = arrayOf("abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz")
-    }
+    private val mappings = arrayOf("abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz")
 
     fun letterCombinations(digits: String): List<String> {
         if (digits.isEmpty()) {

@@ -2,7 +2,7 @@ package leet.code.hard
 
 import leet.code.Solution
 
-class P37SudokuSolver : Solution {
+object P37SudokuSolver : Solution {
 
     override fun test() {
         val sudoku = arrayOf(

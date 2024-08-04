@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-class P22GenerateParentheses : Solution {
+object P22GenerateParentheses : Solution {
 
     override fun test() {
         println(generateParenthesis(3))
@@ -11,7 +11,6 @@ class P22GenerateParentheses : Solution {
     fun generateParenthesis(n: Int): List<String> {
         val res = ArrayList<String>()
         trace(res, 0, 0, "", n)
-
         return res
     }
 

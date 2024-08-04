@@ -2,7 +2,7 @@ package leet.code.hard
 
 import leet.code.Solution
 
-class P44WildcardMatching : Solution {
+object P44WildcardMatching : Solution {
 
     override fun test() {
         println(isMatch("cb", "?a"))

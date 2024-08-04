@@ -3,7 +3,7 @@ package leet.code.hard
 import leet.code.Solution
 
 
-class P42TrappingRainWater : Solution {
+object P42TrappingRainWater : Solution {
 
     override fun test() {
         println(trap(intArrayOf(0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1)))

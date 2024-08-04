@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-class P14LongestCommonPrefix : Solution {
+object P14LongestCommonPrefix : Solution {
 
     override fun test() {
         TODO("Not yet implemented")
@@ -27,7 +27,7 @@ class P14LongestCommonPrefix : Solution {
 
 Original java solution
 
-class Solution {
+object Solution {
     public String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) {
             return "";

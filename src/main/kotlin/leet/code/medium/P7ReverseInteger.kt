@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-class P7ReverseInteger : Solution {
+object P7ReverseInteger : Solution {
 
     override fun test() {
         println(reverse(123))

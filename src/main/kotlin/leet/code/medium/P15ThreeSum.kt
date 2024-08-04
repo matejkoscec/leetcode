@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-class P15ThreeSum : Solution {
+object P15ThreeSum : Solution {
 
     override fun test() {
         println(threeSum(intArrayOf(-1, 0, 1, 2, -1, -4)))

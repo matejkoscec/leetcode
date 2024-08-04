@@ -3,7 +3,7 @@ package leet.code.medium
 import leet.code.Solution
 import kotlin.math.max
 
-class P45JumpGame2 : Solution {
+object P45JumpGame2 : Solution {
 
     override fun test() {
         println(jump(intArrayOf(0)))

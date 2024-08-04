@@ -1,7 +1,5 @@
 package leet.code.util
 
-inline infix fun <T, R> T.into(any: (arg: T) -> R) = any(this)
-
 class ListNode {
     var `val` = 0
     var next: ListNode? = null
@@ -10,6 +8,7 @@ class ListNode {
     constructor(`val`: Int) {
         this.`val` = `val`
     }
+
     constructor(`val`: Int, next: ListNode?) {
         this.`val` = `val`
         this.next = next
@@ -27,6 +26,22 @@ class ListNode {
     }
 }
 
+inline fun node(`val`: Int, init: ListNode.() -> Unit = {}) = ListNode(`val`).apply(init)
+
+fun Iterable<Int>.toLinkedList(): ListNode {
+    val iterator = iterator()
+    if (!iterator.hasNext()) return ListNode()
+
+    val head = node(iterator.next())
+    var current = head
+    while (iterator.hasNext()) {
+        current.next = node(iterator.next())
+        current = current.next!!
+    }
+
+    return head
+}
+
 fun IntRange.toIntArray(): IntArray {
     if (last < first) {
         return IntArray(0)
@@ -40,3 +55,13 @@ fun IntRange.toIntArray(): IntArray {
 
     return result
 }
+
+class TreeNode(var `val`: Int) {
+    var left: TreeNode? = null
+    var right: TreeNode? = null
+    override fun toString(): String {
+        return "TreeNode(val=$`val`, left=$left, right=$right)"
+    }
+}
+
+inline fun tnode(`val`: Int, init: TreeNode.() -> Unit = {}) = TreeNode(`val`).apply(init)

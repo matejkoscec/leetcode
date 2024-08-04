@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-class P6ZigZagConversion : Solution {
+object P6ZigZagConversion : Solution {
 
     override fun test() {
         println(convert("PAYPALISHIRING", 4))

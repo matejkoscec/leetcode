@@ -2,7 +2,7 @@ package leet.code.hard
 
 import leet.code.Solution
 
-class P10RegularExpressionMatching : Solution {
+object P10RegularExpressionMatching : Solution {
 
     override fun test() {
         println(isMatch("abc", "a.*c"))

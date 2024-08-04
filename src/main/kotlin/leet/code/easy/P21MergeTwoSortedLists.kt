@@ -3,7 +3,7 @@ package leet.code.easy
 import leet.code.Solution
 import leet.code.util.ListNode
 
-class P21MergeTwoSortedLists : Solution {
+object P21MergeTwoSortedLists : Solution {
 
     override fun test() {
         val list1 = ListNode(1).apply {

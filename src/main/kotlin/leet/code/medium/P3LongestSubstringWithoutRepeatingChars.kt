@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-class P3LongestSubstringWithoutRepeatingChars : Solution {
+object P3LongestSubstringWithoutRepeatingChars : Solution {
 
     override fun test() {
         println(lengthOfLongestSubstring("pwwkew"))

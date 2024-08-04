@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-class P26RemoveDuplicatesFromSortedArray : Solution {
+object P26RemoveDuplicatesFromSortedArray : Solution {
 
     override fun test() {
         TODO("Not yet implemented")
