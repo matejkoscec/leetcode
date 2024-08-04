@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P63UniquePaths : Solution {
+class P63UniquePaths : Solution {
 
     override fun test() {
         println(

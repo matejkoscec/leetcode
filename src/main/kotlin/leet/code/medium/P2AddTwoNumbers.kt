@@ -3,7 +3,7 @@ package leet.code.medium
 import leet.code.Solution
 import leet.code.util.ListNode
 
-object P2AddTwoNumbers : Solution {
+class P2AddTwoNumbers : Solution {
 
     override fun test() {
         val l1 = ListNode(9, ListNode(9))
@@ -73,7 +73,7 @@ object P2AddTwoNumbers : Solution {
 /*
 Original java code
 
-object Solution {
+class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int sizeOf1 = sizeOf(l1);
         int sizeOf2 = sizeOf(l2);
@@ -130,7 +130,7 @@ object Solution {
     }
 }
 
-public object ListNode {
+public class ListNode {
     int val;
     ListNode next;
 

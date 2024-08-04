@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-object P3028AntOnTheBoundary : Solution {
+class P3028AntOnTheBoundary : Solution {
 
     override fun test() {
         println(returnToBoundaryCount(intArrayOf(2, 3, -5)))

@@ -3,7 +3,7 @@ package leet.code.medium
 import leet.code.Solution
 import kotlin.math.min
 
-object P155MinStack : Solution {
+class P155MinStack : Solution {
 
     override fun test() {
         val stack = MinStack()

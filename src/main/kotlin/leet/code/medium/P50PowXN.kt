@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P50PowXN : Solution {
+class P50PowXN : Solution {
 
     override fun test() {
         println(myPow(2.0, -2))

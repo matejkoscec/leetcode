@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-object P118PascalsTriangle : Solution {
+class P118PascalsTriangle : Solution {
 
     override fun test() {
         println(generate(5))

@@ -2,7 +2,7 @@ package leet.code.hard
 
 import leet.code.Solution
 
-object P4MedianOfTwoSortedArrays : Solution {
+class P4MedianOfTwoSortedArrays : Solution {
 
     override fun test() {
         println(findMedianSortedArrays(intArrayOf(1), intArrayOf()))

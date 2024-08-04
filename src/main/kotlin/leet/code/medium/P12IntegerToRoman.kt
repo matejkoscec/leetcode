@@ -3,7 +3,7 @@ package leet.code.medium
 import leet.code.Solution
 import java.lang.StringBuilder
 
-object P12IntegerToRoman : Solution {
+class P12IntegerToRoman : Solution {
 
     override fun test() {
         println(intToRoman(58))

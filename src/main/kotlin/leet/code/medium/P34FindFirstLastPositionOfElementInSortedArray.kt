@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P34FindFirstLastPositionOfElementInSortedArray : Solution {
+class P34FindFirstLastPositionOfElementInSortedArray : Solution {
 
     override fun test() {
         println(searchRange(intArrayOf(1), 1).contentToString())

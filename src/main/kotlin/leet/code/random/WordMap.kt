@@ -2,7 +2,7 @@ package leet.code.random
 
 import leet.code.Solution
 
-object WordMap : Solution {
+class WordMap : Solution {
 
     override fun test() {
         println(

@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P80RemoveDuplicatesFromSortedArrayII : Solution {
+class P80RemoveDuplicatesFromSortedArrayII : Solution {
 
     override fun test() {
         val array = intArrayOf(0, 0, 1, 1, 1, 1, 2, 3, 3)

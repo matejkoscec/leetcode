@@ -4,7 +4,7 @@ import leet.code.Solution
 import leet.code.util.TreeNode
 
 // TODO
-object P108ConvertSortedArrayToBinarySearchTree : Solution {
+class P108ConvertSortedArrayToBinarySearchTree : Solution {
 
     override fun test() {
         val nums = intArrayOf(-10, -3, 0, 5, 9)

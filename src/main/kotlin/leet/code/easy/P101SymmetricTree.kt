@@ -3,7 +3,7 @@ package leet.code.easy
 import leet.code.Solution
 import leet.code.util.TreeNode
 
-object P101SymmetricTree : Solution {
+class P101SymmetricTree : Solution {
 
     override fun test() {
 

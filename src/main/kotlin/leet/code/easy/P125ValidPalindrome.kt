@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-object P125ValidPalindrome : Solution {
+class P125ValidPalindrome : Solution {
 
     override fun test() {
         println(isPalindrome("anna"))

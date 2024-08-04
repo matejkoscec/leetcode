@@ -2,7 +2,7 @@ package leet.code.hard
 
 import leet.code.Solution
 
-object P51NQueens : Solution {
+class P51NQueens : Solution {
 
     override fun test() {
         println(solveNQueens(4))

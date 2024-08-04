@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-object P28FindIndexOfFirstOccurrence : Solution {
+class P28FindIndexOfFirstOccurrence : Solution {
 
     override fun test() {
         println(strStr("sadbutsad", "sad"))

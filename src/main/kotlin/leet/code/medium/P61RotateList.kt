@@ -3,7 +3,7 @@ package leet.code.medium
 import leet.code.Solution
 import leet.code.util.ListNode
 
-object P61RotateList : Solution {
+class P61RotateList : Solution {
 
     override fun test() {
         val node = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))

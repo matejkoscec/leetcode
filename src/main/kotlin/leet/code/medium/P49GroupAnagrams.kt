@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P49GroupAnagrams : Solution {
+class P49GroupAnagrams : Solution {
 
     override fun test() {
         println(groupAnagrams(arrayOf("eat", "tea", "tan", "ate", "nat", "bat")))

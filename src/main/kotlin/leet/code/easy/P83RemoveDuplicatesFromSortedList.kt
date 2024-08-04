@@ -3,7 +3,7 @@ package leet.code.easy
 import leet.code.Solution
 import leet.code.util.ListNode
 
-object P83RemoveDuplicatesFromSortedList : Solution {
+class P83RemoveDuplicatesFromSortedList : Solution {
 
     override fun test() {
 

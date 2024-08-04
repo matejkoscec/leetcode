@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-object P58LengthOfLastWord : Solution {
+class P58LengthOfLastWord : Solution {
 
     override fun test() {
         println(lengthOfLastWord("   fly me   to   the moon  "))

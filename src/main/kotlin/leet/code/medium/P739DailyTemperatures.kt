@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P739DailyTemperatures : Solution {
+class P739DailyTemperatures : Solution {
 
     override fun test() {
         println(dailyTemperatures(intArrayOf(73, 74, 75, 71, 69, 72, 76, 73)).contentToString())

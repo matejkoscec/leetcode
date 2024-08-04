@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-object P69Sqrtx : Solution {
+class P69Sqrtx : Solution {
 
     override fun test() {
         println(mySqrt(4))

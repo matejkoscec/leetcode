@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P200NumberOfIslands : Solution {
+class P200NumberOfIslands : Solution {
 
     override fun test() {
         println(

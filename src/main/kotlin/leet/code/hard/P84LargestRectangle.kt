@@ -3,7 +3,7 @@ package leet.code.hard
 import leet.code.Solution
 import kotlin.math.max
 
-object P84LargestRectangle : Solution {
+class P84LargestRectangle : Solution {
 
     override fun test() {
         println(largestRectangleArea(intArrayOf(2, 1, 5, 6, 2, 3)))

@@ -2,7 +2,7 @@ package leet.code.hard
 
 import leet.code.Solution
 
-object P30SubstringWithConcatOfAllWords : Solution {
+class P30SubstringWithConcatOfAllWords : Solution {
 
     override fun test() {
         val start = System.currentTimeMillis()

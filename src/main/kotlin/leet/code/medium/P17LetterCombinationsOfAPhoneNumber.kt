@@ -3,7 +3,7 @@ package leet.code.medium
 import leet.code.Solution
 import kotlin.text.StringBuilder
 
-object P17LetterCombinationsOfAPhoneNumber : Solution {
+class P17LetterCombinationsOfAPhoneNumber : Solution {
 
     override fun test() {
         println(letterCombinations("23"))

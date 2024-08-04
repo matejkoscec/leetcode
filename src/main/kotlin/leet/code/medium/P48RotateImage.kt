@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P48RotateImage : Solution {
+class P48RotateImage : Solution {
 
     override fun test() {
         val matrix = arrayOf(

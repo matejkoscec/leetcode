@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-object P242ValidAnagram : Solution {
+class P242ValidAnagram : Solution {
 
     override fun test() {
         println(isAnagram("anagram", "nagaram"))

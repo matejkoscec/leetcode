@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P347TopKFrequentElements : Solution {
+class P347TopKFrequentElements : Solution {
 
     override fun test() {
         println(topKFrequent(intArrayOf(5, 3, 1, 1, 1, 3, 73, 1), 2).contentToString())

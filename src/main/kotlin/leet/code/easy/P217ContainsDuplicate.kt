@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-object P217ContainsDuplicate : Solution {
+class P217ContainsDuplicate : Solution {
 
     override fun test() {
         println(containsDuplicate(intArrayOf(1, 1, 1, 3, 3, 4, 3, 2, 4, 2)))

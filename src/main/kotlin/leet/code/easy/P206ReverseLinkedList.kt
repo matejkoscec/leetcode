@@ -4,7 +4,7 @@ import leet.code.Solution
 import leet.code.util.ListNode
 import leet.code.util.toLinkedList
 
-object P206ReverseLinkedList : Solution {
+class P206ReverseLinkedList : Solution {
 
     override fun test() {
         val head = (1..5).toLinkedList()

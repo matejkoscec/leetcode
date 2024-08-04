@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P71SimplifyPath : Solution {
+class P71SimplifyPath : Solution {
 
     override fun test() {
         println(simplifyPath("/home/"))

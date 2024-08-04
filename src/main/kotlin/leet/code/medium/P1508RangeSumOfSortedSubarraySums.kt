@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P1508RangeSumOfSortedSubarraySums : Solution {
+class P1508RangeSumOfSortedSubarraySums : Solution {
 
     override fun test() {
         println(rangeSum(IntArray(1000) { 100 }, 1000, 1, 500500))

@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P46Permutations : Solution {
+class P46Permutations : Solution {
 
     override fun test() {
         println(permute(intArrayOf(1, 2, 3)))

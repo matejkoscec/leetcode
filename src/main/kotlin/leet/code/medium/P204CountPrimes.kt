@@ -3,7 +3,7 @@ package leet.code.medium
 import leet.code.Solution
 import kotlin.math.sqrt
 
-object P204CountPrimes : Solution {
+class P204CountPrimes : Solution {
 
     override fun test() {
         println(countPrimes(10))

@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P33SearchInRotatedSortedArray : Solution {
+class P33SearchInRotatedSortedArray : Solution {
 
     override fun test() {
         println(search(intArrayOf(), 0))

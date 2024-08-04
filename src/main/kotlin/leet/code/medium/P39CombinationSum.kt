@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P39CombinationSum : Solution {
+class P39CombinationSum : Solution {
 
     override fun test() {
         println(combinationSum(intArrayOf(2, 3, 6, 7), 7))

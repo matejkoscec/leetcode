@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P79WordSearch : Solution {
+class P79WordSearch : Solution {
 
     override fun test() {
         println(

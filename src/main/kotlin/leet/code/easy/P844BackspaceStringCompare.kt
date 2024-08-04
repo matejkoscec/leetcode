@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-object P844BackspaceStringCompare : Solution {
+class P844BackspaceStringCompare : Solution {
 
     override fun test() {
         println(backspaceCompare(s = "ab#c", t = "ad#c"))

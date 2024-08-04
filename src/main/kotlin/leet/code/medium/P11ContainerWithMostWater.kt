@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P11ContainerWithMostWater : Solution {
+class P11ContainerWithMostWater : Solution {
 
     override fun test() {
         println(maxArea(intArrayOf(1, 2, 1)))

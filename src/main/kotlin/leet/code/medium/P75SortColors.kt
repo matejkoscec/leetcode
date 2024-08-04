@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P75SortColors : Solution {
+class P75SortColors : Solution {
 
     override fun test() {
         val colors = intArrayOf(2, 0, 2, 1, 1, 0)

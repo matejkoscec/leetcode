@@ -2,7 +2,7 @@ package leet.code.hard
 
 import leet.code.Solution
 
-object P65ValidNumber : Solution {
+class P65ValidNumber : Solution {
 
     override fun test() {
         arrayOf("abc", "1a", "1e", "e3", "99e2.5", "--6", "-+3", "95a54e53")
@@ -43,7 +43,7 @@ object P65ValidNumber : Solution {
 
     // Close
 //    private sealed interface NumberType
-//    private data object Integer : NumberType
+//    private data class Integer : NumberType
 //    private data class Decimal(
 //        var hasDecimal: Boolean = false,
 //        var isSciNotation: Boolean = false,

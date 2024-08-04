@@ -2,7 +2,7 @@ package leet.code.hard
 
 import leet.code.Solution
 
-object P41FirstMissingPositive : Solution {
+class P41FirstMissingPositive : Solution {
 
     override fun test() {
         println(firstMissingPositive(intArrayOf(1, 2, 0)))

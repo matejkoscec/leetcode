@@ -2,7 +2,7 @@ package leet.code.hard
 
 import leet.code.Solution
 
-object P32LongestValidParentheses : Solution {
+class P32LongestValidParentheses : Solution {
 
     override fun test() {
         println(longestValidParentheses(")()())()()("))

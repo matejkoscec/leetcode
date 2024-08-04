@@ -2,7 +2,7 @@ package leet.code.hard
 
 import leet.code.Solution
 
-object P76MinimumWindowSubstring : Solution {
+class P76MinimumWindowSubstring : Solution {
 
     override fun test() {
         println(minWindow(s = "ADOBECODEBANC", t = "ABC"))
@@ -100,7 +100,7 @@ object P76MinimumWindowSubstring : Solution {
 //        return min ?: ""
 //    }
 //
-//    private object Window(private val s: String, var left: Int = -1, var right: Int = -1) {
+//    private class Window(private val s: String, var left: Int = -1, var right: Int = -1) {
 //
 //        private val window = StringBuilder()
 //

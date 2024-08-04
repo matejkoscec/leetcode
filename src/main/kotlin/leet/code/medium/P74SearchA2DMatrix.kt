@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P74SearchA2DMatrix : Solution {
+class P74SearchA2DMatrix : Solution {
 
     override fun test() {
         println(

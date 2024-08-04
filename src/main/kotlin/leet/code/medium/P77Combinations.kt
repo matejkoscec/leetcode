@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P77Combinations : Solution {
+class P77Combinations : Solution {
 
     override fun test() {
         println(combine(4, 2))

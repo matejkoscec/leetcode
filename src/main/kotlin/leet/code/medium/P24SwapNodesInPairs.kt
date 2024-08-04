@@ -3,7 +3,7 @@ package leet.code.medium
 import leet.code.Solution
 import leet.code.util.ListNode
 
-object P24SwapNodesInPairs : Solution {
+class P24SwapNodesInPairs : Solution {
 
     override fun test() {
         val head = ListNode(1).apply {

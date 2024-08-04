@@ -4,7 +4,7 @@ import leet.code.Solution
 import leet.code.util.toIntArray
 import java.util.*
 
-object P31NextPermutation : Solution {
+class P31NextPermutation : Solution {
 
     override fun test() {
         println(5.`!`)

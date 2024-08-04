@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P54SpiralMatrix : Solution {
+class P54SpiralMatrix : Solution {
 
     override fun test() {
         println(

@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P238ProductOfArrayExceptSelf : Solution {
+class P238ProductOfArrayExceptSelf : Solution {
 
     override fun test() {
         println(productExceptSelf(intArrayOf(1, 2, 3, 4)).contentToString())

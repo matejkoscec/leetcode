@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-object P27RemoveElement : Solution {
+class P27RemoveElement : Solution {
 
     override fun test() {
         TODO("Not yet implemented")

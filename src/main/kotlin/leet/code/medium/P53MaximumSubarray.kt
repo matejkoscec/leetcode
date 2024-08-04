@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P53MaximumSubarray : Solution {
+class P53MaximumSubarray : Solution {
 
     override fun test() {
         println(maxSubArray(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4)))

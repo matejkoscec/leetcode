@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P128LongestConsecutiveSequence : Solution {
+class P128LongestConsecutiveSequence : Solution {
 
     override fun test() {
         println(longestConsecutive(intArrayOf(100, 4, 200, 1, 3, 2)))

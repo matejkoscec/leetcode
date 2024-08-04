@@ -2,7 +2,7 @@ package leet.code.hard
 
 import leet.code.Solution
 
-object P68TextJustification : Solution {
+class P68TextJustification : Solution {
 
     override fun test() {
         println(fullJustify(arrayOf("This", "is", "an", "example", "of", "text", "justification."), 16))

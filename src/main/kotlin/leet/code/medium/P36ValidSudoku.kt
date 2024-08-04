@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P36ValidSudoku : Solution {
+class P36ValidSudoku : Solution {
 
     override fun test() {
         println(

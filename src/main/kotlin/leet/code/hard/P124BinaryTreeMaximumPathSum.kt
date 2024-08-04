@@ -5,7 +5,7 @@ import leet.code.util.TreeNode
 import leet.code.util.tnode
 import kotlin.math.max
 
-object P124BinaryTreeMaximumPathSum : Solution {
+class P124BinaryTreeMaximumPathSum : Solution {
 
     override fun test() {
         val root = tnode(-10) {

@@ -3,7 +3,7 @@ package leet.code.hard
 import leet.code.Solution
 import leet.code.util.ListNode
 
-object P23MergeKSortedLists : Solution {
+class P23MergeKSortedLists : Solution {
 
     override fun test() {
         val list1 = ListNode(1).apply {

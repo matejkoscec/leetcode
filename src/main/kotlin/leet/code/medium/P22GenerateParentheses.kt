@@ -2,7 +2,7 @@ package leet.code.medium
 
 import leet.code.Solution
 
-object P22GenerateParentheses : Solution {
+class P22GenerateParentheses : Solution {
 
     override fun test() {
         println(generateParenthesis(3))

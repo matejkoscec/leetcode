@@ -3,7 +3,7 @@ package leet.code.easy
 import leet.code.Solution
 import leet.code.util.TreeNode
 
-object P100SameTree : Solution {
+class P100SameTree : Solution {
 
     override fun test() {
         println(

@@ -3,7 +3,7 @@ package leet.code.medium
 import leet.code.Solution
 import kotlin.math.min
 
-object P64MinPathSum : Solution {
+class P64MinPathSum : Solution {
 
     override fun test() {
         println(

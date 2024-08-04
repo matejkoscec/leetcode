@@ -3,7 +3,7 @@ package leet.code.medium
 import leet.code.Solution
 import kotlin.math.max
 
-object P57InsertInterval : Solution {
+class P57InsertInterval : Solution {
 
     override fun test() {
         val insert = insert(

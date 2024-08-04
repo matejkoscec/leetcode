@@ -3,7 +3,7 @@ package leet.code.medium
 import leet.code.Solution
 import leet.code.util.ListNode
 
-object P19RemoveNthNodeFromEnd : Solution {
+class P19RemoveNthNodeFromEnd : Solution {
 
     override fun test() {
         val head = ListNode(1).apply {

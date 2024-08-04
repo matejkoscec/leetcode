@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-object P169MajorityElement : Solution {
+class P169MajorityElement : Solution {
 
     override fun test() {
         println(majorityElement(intArrayOf(3, 2, 3)))

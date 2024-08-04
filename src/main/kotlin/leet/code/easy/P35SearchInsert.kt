@@ -2,7 +2,7 @@ package leet.code.easy
 
 import leet.code.Solution
 
-object P35SearchInsert : Solution {
+class P35SearchInsert : Solution {
 
     override fun test() {
         val res = searchInsert(intArrayOf(1, 3, 5, 6), 5)
