@@ -2,6 +2,7 @@ package leet.code.hard
 
 import leet.code.Solution
 import leet.code.util.ListNode
+import java.util.PriorityQueue
 
 class P23MergeKSortedLists : Solution {
 
@@ -25,39 +26,64 @@ class P23MergeKSortedLists : Solution {
     }
 
     fun mergeKLists(lists: Array<ListNode?>): ListNode? {
-        return merge(lists, 0, lists.size - 1)
-    }
+        val priorityQueue = PriorityQueue<Int>()
 
-    fun merge(lists: Array<ListNode?>, left: Int, right: Int): ListNode? {
-        if (left > right) {
+        for (root in lists) {
+            var node = root
+            while (node != null) {
+                priorityQueue.add(node.`val`)
+                node = node.next
+            }
+        }
+
+        if (priorityQueue.isEmpty()) {
             return null
         }
-        if (left == right) {
-            return lists[left]
+
+        val head = ListNode(priorityQueue.poll())
+        var node = head
+        while (priorityQueue.isNotEmpty()) {
+            node.next = ListNode(priorityQueue.poll()).also { node = it }
         }
 
-        val mid = left + (right - left) / 2
-        val l1 = merge(lists, left, mid)
-        val l2 = merge(lists, mid + 1, right)
-
-        return mergeTwoLists(l1, l2)
+        return head
     }
 
-    fun mergeTwoLists(l1: ListNode?, l2: ListNode?): ListNode? {
-        if (l1 == null) {
-            return l2
-        } else if (l2 == null) {
-            return l1
-        }
-
-        return if (l1.`val` < l2.`val`) {
-            l1.next = mergeTwoLists(l1.next, l2)
-            l1
-        } else {
-            l2.next = mergeTwoLists(l1, l2.next)
-            l2
-        }
-    }
+    // Fastest
+//    fun mergeKLists(lists: Array<ListNode?>): ListNode? {
+//        return merge(lists, 0, lists.size - 1)
+//    }
+//
+//    fun merge(lists: Array<ListNode?>, left: Int, right: Int): ListNode? {
+//        if (left > right) {
+//            return null
+//        }
+//        if (left == right) {
+//            return lists[left]
+//        }
+//
+//        val mid = left + (right - left) / 2
+//        val l1 = merge(lists, left, mid)
+//        val l2 = merge(lists, mid + 1, right)
+//
+//        return mergeTwoLists(l1, l2)
+//    }
+//
+//    fun mergeTwoLists(l1: ListNode?, l2: ListNode?): ListNode? {
+//        if (l1 == null) {
+//            return l2
+//        } else if (l2 == null) {
+//            return l1
+//        }
+//
+//        return if (l1.`val` < l2.`val`) {
+//            l1.next = mergeTwoLists(l1.next, l2)
+//            l1
+//        } else {
+//            l2.next = mergeTwoLists(l1, l2.next)
+//            l2
+//        }
+//    }
 
     // First solution
 //    fun mergeKLists(lists: Array<ListNode?>): ListNode? {

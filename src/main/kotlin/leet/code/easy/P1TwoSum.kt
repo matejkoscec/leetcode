@@ -11,11 +11,9 @@ class P1TwoSum : Solution {
     fun twoSum(nums: IntArray, target: Int): IntArray {
         val map = mutableMapOf<Int, Int>()
 
-        for (i in nums.indices) {
-            map[target - nums[i]]?.let {
-                return intArrayOf(it, i)
-            }
-            map[nums[i]] = i
+        for ((i, num) in nums.withIndex()) {
+            map[target - num]?.let { return intArrayOf(it, i) }
+            map[num] = i
         }
 
         return intArrayOf()

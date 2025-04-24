@@ -11,47 +11,31 @@ class P8StringToInteger : Solution {
     }
 
     fun myAtoi(s: String): Int {
-        if (s.isEmpty()) {
-            return 0
-        }
+        val str = s.trim()
 
+        if (str.isEmpty()) return 0
+
+        var sign = 1
         var i = 0
-        while (i < s.length && s[i].isWhitespace()) {
+        if (str[0] == '-') {
+            sign = -1
+            i++
+        } else if (str[0] == '+') {
             i++
         }
-        if (i == s.length) {
-            return 0
-        }
-        val factor = if (s[i] == '+') {
+
+        var res: Long = 0
+        while (i < str.length) {
+            val ch = str[i]
+            if (ch < '0' || ch > '9') break
+
+            res = res * 10 + (ch - '0')
+            if (sign * res > Int.MAX_VALUE) return Int.MAX_VALUE
+            if (sign * res < Int.MIN_VALUE) return Int.MIN_VALUE
+
             i++
-            1
-        } else if (s[i] == '-') {
-            i++
-            -1
-        } else 1
-
-        val digits = StringBuilder()
-        var leadingZero = true
-        while (i < s.length && s[i].isDigit()) {
-            if (s[i] == '0' && leadingZero) {
-                i++
-                continue
-            }
-            leadingZero = false
-            digits.append(s[i++])
         }
 
-        if (digits.isEmpty()) {
-            return 0
-        }
-        val maxInt = Int.MAX_VALUE.toString()
-        if (digits.length < maxInt.length) {
-            return factor * digits.toString().toInt()
-        }
-        if (digits.length > maxInt.length || digits.toString() > maxInt) {
-            return if (factor > 0) Int.MAX_VALUE else Int.MIN_VALUE
-        }
-
-        return factor * digits.toString().toInt()
+        return (sign * res).toInt()
     }
 }

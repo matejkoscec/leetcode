@@ -1,11 +1,34 @@
 package leet.code.medium
 
 import leet.code.Solution
+import kotlin.math.max
 
 class P3LongestSubstringWithoutRepeatingChars : Solution {
 
     override fun test() {
         println(lengthOfLongestSubstring("pwwkew"))
+    }
+
+    fun lengthOfLongestSubstring2(s: String): Int {
+        val locs = mutableSetOf<Char>()
+        var left = 0
+        var max = 0
+        for (right in s.indices) {
+            val c = s[right]
+            if (c !in locs) {
+                locs.add(c)
+                max = max(max, right - left + 1)
+                continue
+            }
+
+            while (c in locs) {
+                locs.remove(s[left])
+                left++
+            }
+            locs.add(c)
+        }
+
+        return max
     }
 
     fun lengthOfLongestSubstring(s: String): Int {

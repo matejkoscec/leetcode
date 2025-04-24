@@ -1,33 +1,5 @@
 package leet.code.util
 
-class ListNode {
-    var `val` = 0
-    var next: ListNode? = null
-
-    constructor()
-    constructor(`val`: Int) {
-        this.`val` = `val`
-    }
-
-    constructor(`val`: Int, next: ListNode?) {
-        this.`val` = `val`
-        this.next = next
-    }
-
-    override fun toString(): String {
-        var node: ListNode? = this
-        val nodes = mutableListOf<Int>()
-        while (node != null) {
-            nodes.add(node.`val`)
-            node = node.next
-        }
-
-        return "[${nodes.joinToString()}]"
-    }
-}
-
-inline fun node(`val`: Int, init: ListNode.() -> Unit = {}) = ListNode(`val`).apply(init)
-
 fun Iterable<Int>.toLinkedList(): ListNode {
     val iterator = iterator()
     if (!iterator.hasNext()) return ListNode()
@@ -48,20 +20,21 @@ fun IntRange.toIntArray(): IntArray {
     }
 
     val result = IntArray(last - first + 1)
-    var index = 0
-    for (element in this) {
-        result[index++] = element
+    for ((i, element) in this.withIndex()) {
+        result[i] = element
     }
 
     return result
 }
 
-class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-    override fun toString(): String {
-        return "TreeNode(val=$`val`, left=$left, right=$right)"
-    }
+fun <R> strArraysToList(arrays: String, transform: (List<Int>) -> R): List<R> {
+    return arrays.removeSurrounding("[", "]")
+        .split("],")
+        .map {
+            it.removePrefix("[").removeSuffix("]")
+                .split(',')
+                .filter(String::isNotBlank)
+                .map(String::toInt)
+        }
+        .map(transform)
 }
-
-inline fun tnode(`val`: Int, init: TreeNode.() -> Unit = {}) = TreeNode(`val`).apply(init)

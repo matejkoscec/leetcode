@@ -11,22 +11,29 @@ class P46Permutations : Solution {
     private var res = mutableListOf<List<Int>>()
 
     fun permute(nums: IntArray): List<List<Int>> {
-        permuteRec(nums, 0, ArrayList())
-        return res
-    }
+        val res = mutableListOf<List<Int>>()
+        val sub = mutableListOf<Int>()
+        val used = BooleanArray(nums.size)
 
-    private fun permuteRec(nums: IntArray, used: Int, list: MutableList<Int>) {
-        if (list.size == nums.size) {
-            res.add(ArrayList(list))
-            return
-        }
+        fun trace() {
+            if (sub.size == nums.size) {
+                res.add(sub.toList())
+                return
+            }
 
-        for (i in nums.indices) {
-            if ((used or (1 shl i)) != used) {
-                list.add(nums[i])
-                permuteRec(nums, used or (1 shl i), list)
-                list.remove(nums[i])
+            for (i in nums.indices) {
+                if (used[i]) continue
+
+                used[i] = true
+                sub.add(nums[i])
+                trace()
+                sub.removeLast()
+                used[i] = false
             }
         }
+
+        trace()
+
+        return res
     }
 }

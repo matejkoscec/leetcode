@@ -1,6 +1,8 @@
 package leet.code.medium
 
 import leet.code.Solution
+import kotlin.math.max
+import kotlin.math.min
 
 class P11ContainerWithMostWater : Solution {
 
@@ -9,25 +11,19 @@ class P11ContainerWithMostWater : Solution {
     }
 
     fun maxArea(height: IntArray): Int {
-        var leftI = 0
-        var rightI = height.size - 1
-        var maxArea = 0
+        var left = 0
+        var right = height.lastIndex
+        var max = 0
 
-        while (leftI < rightI) {
-            val l = height[leftI]
-            val r = height[rightI]
-
-            val currentArea = minOf(l, r) * (rightI - leftI)
-            if (currentArea > maxArea) {
-                maxArea = currentArea
-            }
-            if (l < r) {
-                leftI++
+        while (left < right) {
+            max = max(max, min(height[left], height[right]) * (right - left))
+            if (height[left] < height[right]) {
+                left++
             } else {
-                rightI--
+                right--
             }
         }
 
-        return maxArea
+        return max
     }
 }

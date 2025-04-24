@@ -11,6 +11,36 @@ class P67AddBinary : Solution {
         println(a)
         println(b)
         println(res)
+        println(addBinary2(a, b))
+    }
+
+    // doesn't work for numbers > ULong
+    fun addBinary2(a: String, b: String): String {
+        var num1 = 0L
+        var num2 = 0L
+        var slider = 1L shl a.length - 1
+        for (c in a) {
+            if (c == '1') num1 = slider or num1
+            slider = slider shr 1
+        }
+        slider = 1L shl b.length - 1
+        for (c in b) {
+            if (c == '1') num2 = slider or num2
+            slider = slider shr 1
+        }
+        println("$num1 $num2")
+
+        var sum = num1 + num2
+        if (sum == 0L) return "0"
+
+        val sb = StringBuilder()
+        while (sum != 0L) {
+            val rightMostBit = sum and 1
+            sb.insert(0, rightMostBit)
+            sum = sum shr 1
+        }
+
+        return sb.toString()
     }
 
     fun addBinary(a: String, b: String): String {
